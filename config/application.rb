@@ -31,5 +31,8 @@ module FacilittiMe
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Generate models with UUID enable
+    config.generators.orm :active_record, primary_key_type: :uuid
   end
 end
